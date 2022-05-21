@@ -4,11 +4,11 @@
 2. 根据ORB-SLAM2算法的github 安装相关依赖
 3. 安装完依赖，进入主目录运行以下代码
 
-chmod +x build.sh
+   chmod +x build.sh
 
-./build.sh
+   ./build.sh
 
-编译完成即可按ORB-SLAM2的运行流程运行代码
+ 4. 编译完成即可按ORB-SLAM2的运行流程运行代码
  
 
 # ORB-SLAM2
