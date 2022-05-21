@@ -5,6 +5,7 @@
 3. 安装完依赖，进入主目录运行以下代码
 
 chmod +x build.sh
+
 ./build.sh
 
 编译完成即可按ORB-SLAM2的运行流程运行代码
