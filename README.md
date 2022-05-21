@@ -1,5 +1,5 @@
 # dense-orbslam2
-本算法基于ORB-SLAM2和高翔博士的ORBSLAM2_with_pointcloud_map修改，实现了简单的编译流程
+本算法基于ORB-SLAM2和高翔博士的ORBSLAM2_with_pointcloud_map修改，实现了简单的编译流程，并且添加了地图保存功能
 1. 首先下载代码
 2. 根据ORB-SLAM2算法的github 安装相关依赖
 3. 安装完依赖，进入主目录运行以下代码
