@@ -22,6 +22,7 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <pcl/visualization/cloud_viewer.h>
 #include "Converter.h"
+#include <pcl/io/pcd_io.h>
 
 PointCloudMapping::PointCloudMapping(double resolution_)
 {
@@ -116,6 +117,9 @@ void PointCloudMapping::viewer()
             PointCloud::Ptr p = generatePointCloud( keyframes[i], colorImgs[i], depthImgs[i] );
             *globalMap += *p;
         }
+
+        pcl::io::savePCDFileBinary("vslam.pcd", *globalMap); 
+
         PointCloud::Ptr tmp(new PointCloud());
         voxel.setInputCloud( globalMap );
         voxel.filter( *tmp );
